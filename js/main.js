@@ -94,7 +94,9 @@ var app = {
 		this.detailsURL = /^#employees\/(\d{1,})/;
 		this.registerEvents();
 		this.store = new MemoryStore(function() {
-		//	$('body').html(new HomeView(self.store).render().el);
+		$.mobile.allowCrossDomainPages = true;
+		  $.support.cors = true;
+		  $.mobile.pushStateEnabled = false;
 		self.route();
 		});
     }
