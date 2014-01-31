@@ -10,7 +10,9 @@
     <description>
         A simple employee directory application
     </description>
- 
+	<access origin="http://google.com" />
+	<access origin="http://www.thomas-bayer.com" />
+
 
     <feature name="http://api.phonegap.com/1.0/camera"/>
     <feature name="http://api.phonegap.com/1.0/contacts"/>
